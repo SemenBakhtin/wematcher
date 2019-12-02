@@ -1,0 +1,22 @@
+{
+  "name": "wematcher",
+  "version": "1.0.0",
+  "description": "landing page for wematcher.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemenBakhtin/wematcher.git"
+  },
+  "keywords": [
+    "wematcher"
+  ],
+  "author": "semenbakhtin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemenBakhtin/wematcher/issues"
+  },
+  "homepage": "https://github.com/SemenBakhtin/wematcher#readme"
+}
