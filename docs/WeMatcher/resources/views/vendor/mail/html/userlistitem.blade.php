@@ -1,1 +1,0 @@
-<h3><img src="{{ asset($avatar) }}" width="70" height="70"/>{{ $name }}</h3>
