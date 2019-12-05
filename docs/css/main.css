@@ -82,6 +82,10 @@ body {
   background-repeat: no-repeat;
   font-family: 'glacial_indifference';
 }
+#wematcher_widget {
+  width: 100%;
+  height: 100%;
+}
 .share-button {
   background-color: transparent;
   position: fixed;
@@ -99,10 +103,10 @@ body {
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  border-radius: 39px;
-  padding-top: 25px;
+  border-radius: 30px;
+  padding-top: 20px;
   padding-right: 45px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-left: 45px;
   background-color: #5271ff;
   text-transform: uppercase;
@@ -119,31 +123,100 @@ section .learnabout__title {
   text-align: center;
 }
 section .learnabout__title p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
+section .learnabout__icon {
+  text-align: center;
+}
+section .learnabout__icon .fa {
+  color: #5271ff;
+  transform: translateY(-30%);
+}
 section .row {
-  margin-top: 25px;
+  padding-bottom: 25px;
 }
 section h1,
 section h2,
-section h3 {
+section h3,
+section h4 {
   margin: 0;
   padding: 0;
-  font-size: 34px;
+  font-size: 30px;
   color: #5271ff;
   font-weight: 700;
 }
 section p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
 }
-section .section__text-text {
-  padding: 10px;
+section img {
+  margin-top: 20px;
+  border-radius: 10px;
 }
-#wematcher_widget {
+section .section__text-text {
+  line-height: 30px;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.keyfigures {
+  margin-bottom: 50px;
+}
+.keyfigures .keyfigures__line {
   width: 100%;
-  height: 100%;
+  border-bottom: 3px solid #fff;
+}
+.keyfigures .keyfigures__text {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+.keyfigures .keyfigures__text .keyfigures__content-tittle {
+  font-size: 34px;
+}
+.keyfigures .keyfigures__text .keyfigures__content-description {
+  font-size: 24px;
+}
+@media (min-width: 992px) {
+  .right {
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .left {
+    float: left;
+  }
+}
+.keyfeatures {
+  margin-bottom: 50px;
+}
+.keyfeatures .keyfeatures__block {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.keyfeatures .keyfeatures__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #5271ff;
+  font-weight: 700;
+}
+.keyfeatures .keyfeatures__block-text {
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+.keyfeatures .circle-border {
+  padding: 4px;
+  border: 2px solid #5271ff;
+  border-radius: 50%;
 }
