@@ -23,8 +23,18 @@
         ul {
             padding-left: 0;
             list-style-type: none;
+            display:block;
+            width: 100%;
+            text-align: center;
+
+            @media (min-width:992px){
             display: flex;
             justify-content: space-between;
+            }
+
+            li {
+                margin-bottom: 14px;
+            }
 
             .footer__links-item {
                 text-decoration: none;
@@ -35,23 +45,53 @@
     }
 
     .footer__payment {
+        text-align: center;
+
+        @media (min-width:992px) {
         float: left;
+        }
+        
 
         .footer__payment-text {
-            float: left;
             padding-top: 10px;
+
+            @media (min-width:992px) {
+            float: left;
             padding-right: 10px;
+            }
         }
 
         .footer__payment-icons {
+            margin-bottom: 15px;
+
+            @media (min-width:992px) {
             display: flex;
             justify-content: space-between;
+            }
+
+            img {
+                padding-right: 10px;
+                
+                &:last-child {
+                padding-right: 0;
+                }
+
+                @media (min-width:992px) {
+                padding: 0;
+                }
+            }
         }
     }
 
     .footer__social {
-        float: right;
+        
         display: flex;
+        justify-content: center;
+
+        @media (min-width:992px) {
+        float: right;
+        justify-content: unset;
+        }
 
         .footer__social-item {
             display: flex;
@@ -61,6 +101,7 @@
     }
 
     .footer__line {
+        margin-top: 30px;
         width: 100%;
         border-bottom: 3px solid @logoblue;
     }
@@ -70,9 +111,14 @@
     }
 
     .footer__copyright {
-        margin-bottom: 20px;
-        float: left;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
         color: #acacac;
-    }
 
+        @media (min-width:992px) {
+        float: left;
+        }
+    }
 }
