@@ -9,6 +9,15 @@
         margin-bottom: 20px;
         text-align: center;
         text-decoration: underline;
+
+        opacity: 0.7;
+        transition: 0.2s ease-in;
+        text-shadow: 0 3px 3px #000;
+
+        &:hover, &:active, &:focus {
+        opacity: 1;
+        transition: 0.2s ease-in;
+        }
         
         a {
             text-decoration: none;
@@ -40,6 +49,15 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 color: #fff;
+
+                opacity: 0.7;
+                transition: 0.2s ease-in;
+                text-shadow: 0 3px 3px #000;
+
+                &:hover, &:active, &:focus {
+                opacity: 1;
+                transition: 0.2s ease-in;
+                }
             }
         }
     }
@@ -86,24 +104,37 @@
     .footer__social {
         
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
         @media (min-width:992px) {
         float: right;
-        justify-content: unset;
+        justify-content: unset;   
+        }
+
+        .fa {
+        opacity: 0.7;
+        transition: 0.2s ease-in;
+        text-shadow: 0 3px 3px #000;
+
+            @media (min-width:992px) {
+            padding-left: 15px;
+            }
+
+            &:hover, &:active, &:focus {
+            color: @logoblue;
+            opacity: 1;
+            transition: 0.2s ease-in;
+            }
         }
 
         .footer__social-item {
             display: flex;
             justify-content: space-between;
             text-decoration: none;
-            padding: 10px;
             transition: 0.2s ease-in;
 
-            &:hover, &:active, &:focus {
-            fill: @logoblue;
-            transition: 0.2s ease-in;
-            }
+            text-decoration: none;
+            color: #fff;
         }
     }
 

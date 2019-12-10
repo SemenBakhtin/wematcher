@@ -115,13 +115,25 @@ body {
   color: #fff;
   outline: none;
   border: none;
-  box-shadow: 0 3px 8px #000;
+  box-shadow: 0 10px 10px #000;
+  opacity: 0.7;
+  transition: 0.2s ease-in;
 }
 @media (min-width: 992px) {
   .section-button {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+}
+.section-button:hover,
+.section-button:focus {
+  opacity: 1;
+  transition: 0.2s ease-in;
+  box-shadow: 0 3px 3px #000;
+  outline: none;
+}
+.section-button:active {
+  color: #5271ff;
 }
 section {
   color: #fff;
@@ -135,6 +147,7 @@ section .learnabout__title p {
 }
 section .learnabout__icon {
   text-align: center;
+  display: block;
 }
 section .learnabout__icon .fa {
   color: #5271ff;
@@ -149,9 +162,10 @@ section h3,
 section h4 {
   margin: 0;
   padding: 0;
+  padding-left: 8px;
   color: #5271ff;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
 }
 @media (min-width: 992px) {
   section h1,
@@ -248,15 +262,28 @@ section .section__text-text {
   }
 }
 .keyfeatures {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .keyfeatures {
+    margin-bottom: 50px;
+  }
 }
 .keyfeatures .keyfeatures__block {
   text-align: center;
   padding-bottom: 15px;
 }
+.keyfeatures .keyfeatures__block img {
+  width: 50%;
+}
+@media (min-width: 992px) {
+  .keyfeatures .keyfeatures__block img {
+    width: 100%;
+  }
+}
 .keyfeatures .keyfeatures__title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #5271ff;
   font-weight: 700;
 }
@@ -264,7 +291,7 @@ section .section__text-text {
 .keyfeatures .keyfeatures__title h2,
 .keyfeatures .keyfeatures__title h3,
 .keyfeatures .keyfeatures__title h4 {
-  font-size: 25px;
+  font-size: 15px;
 }
 @media (min-width: 992px) {
   .keyfeatures .keyfeatures__title h1,
@@ -275,22 +302,28 @@ section .section__text-text {
   }
 }
 .keyfeatures .keyfeatures__block-text {
-  padding-top: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 18px;
+  padding-top: 10px;
+  font-size: 10px;
   font-weight: 400;
   color: #fff;
 }
 @media (min-width: 992px) {
   .keyfeatures .keyfeatures__block-text {
     font-size: 25px;
+    padding-top: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .keyfeatures .circle-border {
   padding: 4px;
   border: 2px solid #5271ff;
   border-radius: 50%;
+}
+.keyfeatures .keyfeatures__line {
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: 3px solid #5271ff;
 }
 .footer {
   font-size: 16px;
@@ -302,6 +335,15 @@ section .section__text-text {
   margin-bottom: 20px;
   text-align: center;
   text-decoration: underline;
+  opacity: 0.7;
+  transition: 0.2s ease-in;
+  text-shadow: 0 3px 3px #000;
+}
+.footer .footer__support-link:hover,
+.footer .footer__support-link:active,
+.footer .footer__support-link:focus {
+  opacity: 1;
+  transition: 0.2s ease-in;
 }
 .footer .footer__support-link a {
   text-decoration: none;
@@ -331,6 +373,15 @@ section .section__text-text {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  opacity: 0.7;
+  transition: 0.2s ease-in;
+  text-shadow: 0 3px 3px #000;
+}
+.footer .footer__links ul .footer__links-item:hover,
+.footer .footer__links ul .footer__links-item:active,
+.footer .footer__links ul .footer__links-item:focus {
+  opacity: 1;
+  transition: 0.2s ease-in;
 }
 .footer .footer__payment {
   text-align: center;
@@ -371,7 +422,7 @@ section .section__text-text {
 }
 .footer .footer__social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (min-width: 992px) {
   .footer .footer__social {
@@ -379,18 +430,29 @@ section .section__text-text {
     justify-content: unset;
   }
 }
+.footer .footer__social .fa {
+  opacity: 0.7;
+  transition: 0.2s ease-in;
+  text-shadow: 0 3px 3px #000;
+}
+@media (min-width: 992px) {
+  .footer .footer__social .fa {
+    padding-left: 15px;
+  }
+}
+.footer .footer__social .fa:hover,
+.footer .footer__social .fa:active,
+.footer .footer__social .fa:focus {
+  color: #5271ff;
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
 .footer .footer__social .footer__social-item {
   display: flex;
   justify-content: space-between;
+  transition: 0.2s ease-in;
   text-decoration: none;
-  padding: 10px;
-  transition: 0.2s ease-in;
-}
-.footer .footer__social .footer__social-item:hover,
-.footer .footer__social .footer__social-item:active,
-.footer .footer__social .footer__social-item:focus {
-  fill: #5271ff;
-  transition: 0.2s ease-in;
+  color: #fff;
 }
 .footer .footer__line {
   margin-top: 30px;
