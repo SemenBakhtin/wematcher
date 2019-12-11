@@ -87,6 +87,7 @@ body {
   height: 100%;
 }
 .share-button {
+  display: none;
   background-color: transparent;
   position: fixed;
   top: 43vh;
@@ -141,6 +142,36 @@ body {
 .section-button:active {
   color: #5271ff;
 }
+.logo {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #5271ff;
+  background-color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  border: 3px solid #fff;
+  display: inline-block;
+  margin-left: 35px;
+  box-shadow: 0 10px 10px #000;
+  transition: 0.2s ease inherit;
+  transition: 0.2s ease-in;
+}
+.logo a {
+  text-decoration: none;
+  color: #5271ff;
+}
+.header-bg {
+  background-image: url(../img/bg-small.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
 section {
   color: #fff;
 }
@@ -150,6 +181,9 @@ section .learnabout__title {
 section .learnabout__title p {
   font-size: 20px;
   font-weight: 700;
+}
+section .section__text-title {
+  margin-top: 10px;
 }
 section .learnabout__icon {
   text-align: center;
