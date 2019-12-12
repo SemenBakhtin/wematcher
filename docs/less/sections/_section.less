@@ -1,4 +1,6 @@
-
+/* ==========================================================================
+   Section
+   ========================================================================== */
 section {
     color: #fff;
 
@@ -27,7 +29,7 @@ section {
         padding-bottom: 25px;
     }
 
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, span {
         margin: 0;
         padding: 0;
         padding-left: 8px;    
@@ -70,6 +72,45 @@ section {
         @media (min-width:992px) {
         line-height: 30px;
         padding-top: 25px;
+        }
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    //for letters with side brackets
+    ul {
+        counter-reset: list;
+        margin: 0;
+        
+        li {
+        list-style: none;
+        position: relative;
+
+            &:before {
+            counter-increment: list;
+            content: counter(list, lower-alpha) ") ";
+            position: absolute;
+            left: -1.4em;
+            }
+        }
+    }
+    //for numbers with side brackets
+    ol {
+        counter-reset: list;
+        margin: 0;
+        
+        li {
+        list-style: none;
+        position: relative;
+
+            &:before {
+            counter-increment: list;
+            content: counter(list, decimal) ") ";
+            position: absolute;
+            left: -1.4em;
+            }
         }
     }
 }
